@@ -160,7 +160,7 @@ def replace_audio(path):
 
 def main():
     print("anime tools v2.0".center(50,"-"),end="\n\n")
-    path = input("工作目录(末尾需要带有'\\'):")
+    path = input("工作目录(末尾需要带有'\\'，linux或者Mac要带有'/'):")
     print("""
             请选择下面中的一项:
             1) 字幕重命名成视频名

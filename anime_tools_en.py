@@ -159,7 +159,7 @@ def replace_audio(path):
 
 def main():
     print("anime tools v2.1".center(50,"-"),end="\n\n")
-    path = input("Working directory(add'\\'to the end of the path):")
+    path = input("Working directory(add'\\'to the end of the path, add '/' if you are using linux or Mac):")
     print("""
             Please select one of the following:
             1) Rename subtitiles to match videos
