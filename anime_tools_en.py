@@ -96,6 +96,7 @@ def merge_audio(path):
     i = 1
     for video in list(video_audio.keys()):
         ff = FFmpeg(
+            executable='./ffmpeg.exe',
             inputs={path + video: None, path + video_audio[video]:None},
             outputs={path + '{}_merged_audio.mkv'.format(os.path.splitext(video)[0]): '-map 0 -map 1 -c copy'}
         )
@@ -144,6 +145,7 @@ def replace_audio(path):
     i = 1
     for video in list(video_audio.keys()):
         ff = FFmpeg(
+            executable='./ffmpeg.exe',
             inputs={path + video: None, path + video_audio[video]:None},
             outputs={path + '{}_replaced_audio.mkv'.format(os.path.splitext(video)[0]): '-c:v copy -c:a aac -strict experimental -map 0:v:0 -map 1:a:0'}
         )
