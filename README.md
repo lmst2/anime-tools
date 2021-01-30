@@ -1,3 +1,4 @@
+[![time tracker](https://wakatime.com/badge/github/lmst2/anime-tools.svg)](https://wakatime.com/badge/github/lmst2/anime-tools)
 # anime-tools
 rename subtitles to match videos, 字幕批量重命名匹配视频名称<br>
 merge external audio into video files, 外部音频和视频合并<br>
